@@ -1,0 +1,84 @@
+/* Contenedor principal del formulario de creación */
+.create-prestamo-container {
+  width: 100%;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ff7f50, #ff6347); /* Colores melón */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* Título del formulario */
+.create-prestamo-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+/* Estilos del formulario */
+.create-prestamo-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas con el mismo tamaño */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Estilos para cada campo del formulario */
+.create-prestamo-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+.create-prestamo-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* Campos de selección (select) y de entrada (input) */
+.create-prestamo-form select,
+.create-prestamo-form input {
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #ff7f50; /* Color melón */
+  border-radius: 6px;
+  transition: border 0.3s ease-in-out;
+  width: 100%;  /* Asegura que los campos no se desborden */
+  box-sizing: border-box;  /* Asegura que el padding no cause el desbordamiento */
+}
+
+/* Estilo al enfocar un campo de entrada o selección */
+.create-prestamo-form input:focus,
+.create-prestamo-form select:focus {
+  border-color: #ff6347; /* Color melón más oscuro */
+  outline: none;
+}
+
+/* Botón de envío */
+.submit-button {
+  grid-column: span 2; /* Ocupa las dos columnas */
+  padding: 14px;
+  font-size: 16px;
+  background-color: #ff7f50; /* Color melón */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;  /* Asegura que el botón no se desborde */
+}
+
+/* Hover del botón */
+.submit-button:hover {
+  background-color: #ff6347; /* Color melón más oscuro */
+}
+
+/* Estilo para errores o campos inválidos */
+.create-prestamo-form input:invalid,
+.create-prestamo-form select:invalid {
+  border-color: #e74c3c;
+}

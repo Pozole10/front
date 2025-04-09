@@ -1,0 +1,96 @@
+/* Restablecer márgenes y padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Fondo más suave */
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.register-box {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  border-top: 4px solid #ff6f61; /* Color cálido para el borde superior */
+  box-sizing: border-box;
+}
+
+.register-title {
+  color: #333;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.register-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.register-input:focus {
+  border-color: #ff6f61; /* Cambio de color de borde a color cálido */
+  background-color: #ffffff;
+}
+
+.register-button {
+  width: 100%;
+  background: #ff6f61; /* Color cálido */
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.register-button:hover {
+  background: #ff4e42; /* Un tono más fuerte para el hover */
+}
+
+.register-login-text {
+  color: #666;
+  margin-top: 1rem;
+}
+
+.register-login-link {
+  color: #ff6f61;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.register-login-link:hover {
+  text-decoration: underline;
+}

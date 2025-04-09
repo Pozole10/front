@@ -1,0 +1,84 @@
+/* Contenedor principal del formulario de creación de material */
+.create-material-container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ff7f50, #ff6347); /* Colores melón */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Título del formulario */
+.create-material-container h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+/* Estilos del formulario */
+.create-material-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: stretch; /* Asegura que todos los elementos se estiren para llenar el espacio */
+}
+
+/* Estilos para cada campo del formulario */
+.create-material-form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Etiquetas */
+.create-material-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* Campos de entrada (input) y select */
+.create-material-form input,
+.create-material-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ff7f50; /* Color melón */
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilo al enfocar un campo de entrada o selección */
+.create-material-form input:focus,
+.create-material-form select:focus {
+  border-color: #ff6347; /* Color melón más oscuro */
+}
+
+/* Botón de envío */
+.submit-button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #ff7f50; /* Color melón */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover del botón */
+.submit-button:hover {
+  background-color: #ff6347; /* Color melón más oscuro */
+  transform: scale(1.05);
+}
+
+/* Estilo para errores o campos inválidos */
+.create-material-form input:invalid,
+.create-material-form select:invalid {
+  border-color: #e74c3c; /* Color rojo para errores */
+}

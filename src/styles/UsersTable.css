@@ -1,0 +1,79 @@
+.usuarios-container {
+  padding: 25px;
+  background: linear-gradient(135deg, #f7c6e0, #f9a8d4); /* Colores suaves y cálidos */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333; /* Color oscuro para contraste */
+}
+
+.usuarios-table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.usuarios-table th,
+.usuarios-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.usuarios-table th {
+  background-color: #ff6f61; /* Color cálido */
+  color: white;
+  font-weight: bold;
+}
+
+.usuarios-table tr:nth-child(even) {
+  background-color: #f9d6e0; /* Color más claro para filas pares */
+}
+
+.usuarios-table tr:hover {
+  background-color: #f8b3c0; /* Color de hover más suave */
+}
+
+/* Estilos de los botones */
+button {
+  padding: 12px 20px;
+  font-size: 15px;
+  margin: 6px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background-color: #ff6f61; /* Color cálido */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ff9a8b; /* Color más suave en hover */
+}
+
+.delete-button {
+  background-color: #f7c6e0; /* Color más suave para borrar */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #f9a8d4; /* Color más intenso en hover */
+}

@@ -1,0 +1,45 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Colores suaves y cálidos */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.dashboard-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dashboard-button {
+  background-color: #ff6f61; /* Color cálido */
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 240px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-button:hover {
+  background-color: #ff9a8b; /* Color más suave en hover */
+  transform: scale(1.05);
+}

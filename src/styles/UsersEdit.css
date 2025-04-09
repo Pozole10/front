@@ -1,0 +1,85 @@
+/* Contenedor del formulario de edición de usuario */
+.edit-user-container {
+  width: 70%;
+  margin: 60px auto;
+  padding: 35px;
+  background: linear-gradient(135deg, #f7c6e0, #f9a8d4); /* Colores suaves rosados */
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título del formulario */
+.edit-user-container h2 {
+  color: #4b0082; /* Color oscuro para el texto */
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Estilo de la estructura del formulario */
+.edit-user-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: stretch;
+  align-items: center;
+}
+
+/* Estilo de los campos de entrada y selección */
+.edit-user-form input,
+.edit-user-form select {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: 2px solid #ff6f61; /* Color cálido */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Estilo cuando el campo está enfocado */
+.edit-user-form input:focus,
+.edit-user-form select:focus {
+  border-color: #ff9a8b; /* Cálido y suave para el enfoque */
+}
+
+/* Estilo para los campos inválidos */
+.edit-user-form input:invalid,
+.edit-user-form select:invalid {
+  border-color: #e74c3c;  /* Color de borde en rojo para campos inválidos */
+}
+
+/* Botón de envío */
+.edit-user-form button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  background-color: #ff6f61; /* Color cálido */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+/* Hover y efecto del botón */
+.edit-user-form button:hover {
+  background-color: #ff9a8b; /* Morado más suave */
+  transform: scale(1.05);
+}
+
+/* Responsividad: Ajustar para pantallas pequeñas */
+@media (max-width: 768px) {
+  .edit-user-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .edit-user-form {
+    grid-template-columns: 1fr; /* Los campos se apilan verticalmente */
+  }
+}

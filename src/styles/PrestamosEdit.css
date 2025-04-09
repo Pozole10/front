@@ -1,0 +1,74 @@
+/* Contenedor principal del formulario de edición */
+.edit-prestamo-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a5acd, #8a2be2); /* Morado y azul */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.edit-prestamo-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Estilos del formulario */
+.edit-prestamo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilos para cada campo del formulario */
+.edit-prestamo-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+.edit-prestamo-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+/* Campos de entrada (input) */
+.edit-prestamo-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #4b0082;
+  border-radius: 5px;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Estilo al enfocar un campo de entrada */
+.edit-prestamo-form input:focus {
+  border-color: #6a5acd;
+  outline: none;
+}
+
+/* Botón de envío */
+.submit-button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover del botón */
+.submit-button:hover {
+  background-color: #6a5acd;
+}
+
+/* Estilo para errores o campos inválidos */
+.edit-prestamo-form input:invalid {
+  border-color: #e74c3c;
+}
